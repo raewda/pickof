@@ -1,12 +1,10 @@
 package com.example.pickof
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
@@ -19,7 +17,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -77,6 +74,14 @@ fun Home(navController: NavHostController){
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
+                Text("PROGRESS:",
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 30.dp),
+                    fontFamily = gamaamli,
+                    fontSize = 18.sp,
+                    color = Color.White
+                    )
 
                 //2
                 Button(
@@ -93,6 +98,14 @@ fun Home(navController: NavHostController){
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
+                Text("PROGRESS:",
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 30.dp),
+                    fontFamily = gamaamli,
+                    fontSize = 18.sp,
+                    color = Color.White
+                )
 
                 //3
                 Button(
@@ -109,6 +122,14 @@ fun Home(navController: NavHostController){
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
+                Text("PROGRESS:",
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 30.dp),
+                    fontFamily = gamaamli,
+                    fontSize = 18.sp,
+                    color = Color.White
+                )
 
                 //4
                 Button(
@@ -125,6 +146,14 @@ fun Home(navController: NavHostController){
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
+                Text("PROGRESS:",
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 30.dp),
+                    fontFamily = gamaamli,
+                    fontSize = 18.sp,
+                    color = Color.White
+                )
 
                 //5
                 Button(
@@ -141,6 +170,14 @@ fun Home(navController: NavHostController){
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
+                Text("PROGRESS:",
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 30.dp),
+                    fontFamily = gamaamli,
+                    fontSize = 18.sp,
+                    color = Color.White
+                )
 
                 //6
                 Button(
@@ -157,6 +194,14 @@ fun Home(navController: NavHostController){
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
+                Text("PROGRESS:",
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 30.dp),
+                    fontFamily = gamaamli,
+                    fontSize = 18.sp,
+                    color = Color.White
+                )
 
                 //7
                 Button(
@@ -173,6 +218,14 @@ fun Home(navController: NavHostController){
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
+                Text("PROGRESS:",
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 30.dp),
+                    fontFamily = gamaamli,
+                    fontSize = 18.sp,
+                    color = Color.White
+                )
 
                 //8
                 Button(
@@ -189,6 +242,14 @@ fun Home(navController: NavHostController){
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
+                Text("PROGRESS:",
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 30.dp),
+                    fontFamily = gamaamli,
+                    fontSize = 18.sp,
+                    color = Color.White
+                )
 
                 //9
                 Button(
@@ -205,6 +266,14 @@ fun Home(navController: NavHostController){
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
+                Text("PROGRESS:",
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 30.dp),
+                    fontFamily = gamaamli,
+                    fontSize = 18.sp,
+                    color = Color.White
+                )
 
             }
         }
