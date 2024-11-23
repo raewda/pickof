@@ -29,6 +29,15 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.pickof.levels.Eight
+import com.example.pickof.levels.Five
+import com.example.pickof.levels.Four
+import com.example.pickof.levels.Nine
+import com.example.pickof.levels.One
+import com.example.pickof.levels.Seven
+import com.example.pickof.levels.Six
+import com.example.pickof.levels.Three
+import com.example.pickof.levels.Two
 import com.example.pickof.ui.theme.Biryuzovyi
 import com.example.pickof.ui.theme.PickOfTheme
 import com.example.pickof.ui.theme.Seryi
@@ -51,6 +60,33 @@ class MainActivity : ComponentActivity() {
                     }
                     composable("home"){
                         Home(navController)
+                    }
+                    composable("one"){
+                        One(navController)
+                    }
+                    composable("two"){
+                        Two(navController)
+                    }
+                    composable("three"){
+                        Three(navController)
+                    }
+                    composable("four"){
+                        Four(navController)
+                    }
+                    composable("five"){
+                        Five(navController)
+                    }
+                    composable("six"){
+                        Six(navController)
+                    }
+                    composable("seven"){
+                        Seven(navController)
+                    }
+                    composable("eight"){
+                        Eight(navController)
+                    }
+                    composable("nine"){
+                        Nine(navController)
                     }
                 }
             }

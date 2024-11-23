@@ -66,7 +66,7 @@ fun Home(navController: NavHostController){
                         .fillMaxWidth(),
                     colors = ButtonDefaults.buttonColors(Biryuzovyi),
                     onClick = {
-//                        navController.navigate("home")
+                        navController.navigate("one")
                     }
                 ) {
                     Text("path 1",
@@ -90,7 +90,7 @@ fun Home(navController: NavHostController){
                         .fillMaxWidth(),
                     colors = ButtonDefaults.buttonColors(Biryuzovyi),
                     onClick = {
-//                        navController.navigate("home")
+                        navController.navigate("two")
                     }
                 ) {
                     Text("path 2",
@@ -114,7 +114,7 @@ fun Home(navController: NavHostController){
                         .fillMaxWidth(),
                     colors = ButtonDefaults.buttonColors(Biryuzovyi),
                     onClick = {
-//                        navController.navigate("home")
+                        navController.navigate("three")
                     }
                 ) {
                     Text("path 3",
@@ -138,7 +138,7 @@ fun Home(navController: NavHostController){
                         .fillMaxWidth(),
                     colors = ButtonDefaults.buttonColors(Biryuzovyi),
                     onClick = {
-//                        navController.navigate("home")
+                        navController.navigate("four")
                     }
                 ) {
                     Text("path 4",
@@ -162,7 +162,7 @@ fun Home(navController: NavHostController){
                         .fillMaxWidth(),
                     colors = ButtonDefaults.buttonColors(Biryuzovyi),
                     onClick = {
-//                        navController.navigate("home")
+                        navController.navigate("five")
                     }
                 ) {
                     Text("path 5",
@@ -186,7 +186,7 @@ fun Home(navController: NavHostController){
                         .fillMaxWidth(),
                     colors = ButtonDefaults.buttonColors(Biryuzovyi),
                     onClick = {
-//                        navController.navigate("home")
+                        navController.navigate("six")
                     }
                 ) {
                     Text("path 6",
@@ -210,7 +210,7 @@ fun Home(navController: NavHostController){
                         .fillMaxWidth(),
                     colors = ButtonDefaults.buttonColors(Biryuzovyi),
                     onClick = {
-//                        navController.navigate("home")
+                        navController.navigate("seven")
                     }
                 ) {
                     Text("path 7",
@@ -234,7 +234,7 @@ fun Home(navController: NavHostController){
                         .fillMaxWidth(),
                     colors = ButtonDefaults.buttonColors(Biryuzovyi),
                     onClick = {
-//                        navController.navigate("home")
+                        navController.navigate("eight")
                     }
                 ) {
                     Text("path 8",
@@ -258,7 +258,7 @@ fun Home(navController: NavHostController){
                         .fillMaxWidth(),
                     colors = ButtonDefaults.buttonColors(Biryuzovyi),
                     onClick = {
-//                        navController.navigate("home")
+                        navController.navigate("nine")
                     }
                 ) {
                     Text("path 9",
