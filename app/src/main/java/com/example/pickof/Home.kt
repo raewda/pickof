@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -48,7 +49,7 @@ fun Home(navController: NavHostController){
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
 
-                Text("PICK PICK PICK PICK PICK",
+                Text("PICK LEVELS",
                     modifier = Modifier
                         .padding(horizontal = 25.dp),
                     color = Color.White,
@@ -67,7 +68,9 @@ fun Home(navController: NavHostController){
                     colors = ButtonDefaults.buttonColors(Biryuzovyi),
                     onClick = {
                         navController.navigate("one")
-                    }
+                    },
+                    shape = RoundedCornerShape(
+                        10, 50, 10, 50)
                 ) {
                     Text("path 1",
                         modifier = Modifier,
@@ -91,7 +94,9 @@ fun Home(navController: NavHostController){
                     colors = ButtonDefaults.buttonColors(Biryuzovyi),
                     onClick = {
                         navController.navigate("two")
-                    }
+                    },
+                    shape = RoundedCornerShape(
+                        10, 50, 10, 50)
                 ) {
                     Text("path 2",
                         modifier = Modifier,
@@ -115,7 +120,9 @@ fun Home(navController: NavHostController){
                     colors = ButtonDefaults.buttonColors(Biryuzovyi),
                     onClick = {
                         navController.navigate("three")
-                    }
+                    },
+                    shape = RoundedCornerShape(
+                        10, 50, 10, 50)
                 ) {
                     Text("path 3",
                         modifier = Modifier,
@@ -139,7 +146,9 @@ fun Home(navController: NavHostController){
                     colors = ButtonDefaults.buttonColors(Biryuzovyi),
                     onClick = {
                         navController.navigate("four")
-                    }
+                    },
+                    shape = RoundedCornerShape(
+                        10, 50, 10, 50)
                 ) {
                     Text("path 4",
                         modifier = Modifier,
@@ -163,7 +172,9 @@ fun Home(navController: NavHostController){
                     colors = ButtonDefaults.buttonColors(Biryuzovyi),
                     onClick = {
                         navController.navigate("five")
-                    }
+                    },
+                    shape = RoundedCornerShape(
+                        10, 50, 10, 50)
                 ) {
                     Text("path 5",
                         modifier = Modifier,
@@ -187,7 +198,9 @@ fun Home(navController: NavHostController){
                     colors = ButtonDefaults.buttonColors(Biryuzovyi),
                     onClick = {
                         navController.navigate("six")
-                    }
+                    },
+                    shape = RoundedCornerShape(
+                        10, 50, 10, 50)
                 ) {
                     Text("path 6",
                         modifier = Modifier,
@@ -211,7 +224,9 @@ fun Home(navController: NavHostController){
                     colors = ButtonDefaults.buttonColors(Biryuzovyi),
                     onClick = {
                         navController.navigate("seven")
-                    }
+                    },
+                    shape = RoundedCornerShape(
+                        10, 50, 10, 50)
                 ) {
                     Text("path 7",
                         modifier = Modifier,
@@ -235,7 +250,9 @@ fun Home(navController: NavHostController){
                     colors = ButtonDefaults.buttonColors(Biryuzovyi),
                     onClick = {
                         navController.navigate("eight")
-                    }
+                    },
+                    shape = RoundedCornerShape(
+                        10, 50, 10, 50)
                 ) {
                     Text("path 8",
                         modifier = Modifier,
@@ -259,7 +276,9 @@ fun Home(navController: NavHostController){
                     colors = ButtonDefaults.buttonColors(Biryuzovyi),
                     onClick = {
                         navController.navigate("nine")
-                    }
+                    },
+                    shape = RoundedCornerShape(
+                        10, 50, 10, 50)
                 ) {
                     Text("path 9",
                         modifier = Modifier,

@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
@@ -130,7 +131,7 @@ fun MA (navController: NavHostController) {
                         .size(370.dp),
                 )
 
-                Text("PICK AND HAVE TIME, CLOSE ALL PLANS\n PICK PICK PICK PICK PICK",
+                Text("PICK AND HAVE TIME, CLOSE ALL PLANS",
                     modifier = Modifier
                         .padding(horizontal = 25.dp),
                     color = Color.White,
@@ -144,11 +145,13 @@ fun MA (navController: NavHostController) {
                 Button(
                     modifier = Modifier
                         .padding(bottom = 60.dp)
-                        .size(120.dp),
+                        .size(160.dp, 100.dp),
                     colors = ButtonDefaults.buttonColors(Biryuzovyi),
                     onClick = {
                         navController.navigate("home")
-                    }
+                    },
+                    shape = RoundedCornerShape(
+                        10, 50, 10, 50)
                 ) {
                     Text("PICK",
                         modifier = Modifier,
