@@ -3,34 +3,45 @@ package com.example.pickof.levels
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.example.pickof.ui.theme.Biryuzovyi
 import com.example.pickof.ui.theme.Seryi
-import com.example.pickof.ui.theme.Typography
 import com.example.pickof.ui.theme.gamaamli
 
 @Composable
-fun One(navController: NavHostController){
+fun One(
+    navController: NavHostController, resultone: Boolean,
+        ){
+
+    var gamer by remember { mutableStateOf(false) }
+    var game by remember { mutableStateOf(false) }
+    var win by remember { mutableStateOf(false) }
+
     Scaffold(
         modifier = Modifier.fillMaxSize(),
         containerColor = Seryi
@@ -43,6 +54,8 @@ fun One(navController: NavHostController){
             Column(
                 modifier = Modifier
                     .padding(innerPadding)
+                    .fillMaxSize(),
+                verticalArrangement = Arrangement.SpaceEvenly
             ) {
 
                 Row(
@@ -94,11 +107,65 @@ fun One(navController: NavHostController){
                             fontFamily = gamaamli,
                             color = Color.White)
                     }
+                } //row
+
+                Text(
+                    text = "There are several buttons on the playing field. \n" +
+                            "You need to guess which button the game has chosen and click on it. \n" +
+                            "If it matches, the level is passed",
+                    modifier = Modifier
+                        .padding(horizontal = 25.dp),
+                    color = Color.White,
+                    textAlign = TextAlign.Center,
+                    fontFamily = gamaamli,
+                    fontSize = 36.sp,
+                    lineHeight = 37.sp,
+                    softWrap = true
+                )
+
+                Button(
+                    modifier = Modifier
+                        .padding(10.dp)
+                        .size(80.dp, 160.dp)
+                        .align(Alignment.CenterHorizontally),
+                    onClick = {
+                        gamer = true
+                    },
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = if (gamer == true){
+                            Color.White
+                        } else{
+                            Biryuzovyi
+                        }
+                    ),
+                    shape = RoundedCornerShape(
+                        10, 50, 10, 50)
+                ) {
+
                 }
 
 
-            }
-        }
-    }
+
+                Button(
+                    modifier = Modifier
+                        .padding(10.dp)
+                        .size(80.dp)
+                        .align(Alignment.CenterHorizontally),
+                    onClick = {
+                        gamer = false
+                        game = false
+                    },
+                    colors = ButtonDefaults.buttonColors(Color.Transparent)
+                ) {
+                Icon(
+                    imageVector = Icons.Filled.Refresh,
+                    contentDescription = "replay",
+                    modifier = Modifier
+                        .fillMaxSize())
+                }
+
+            } //column
+        } // card
+    } // scaffold
 }
 

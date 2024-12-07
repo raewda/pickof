@@ -19,6 +19,10 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -52,6 +56,15 @@ class MainActivity : ComponentActivity() {
         setContent {
             PickOfTheme {
                 val navController = rememberNavController()
+                var resultone by remember { mutableStateOf(false) }
+                var resulttwo by remember { mutableStateOf(false) }
+                var resultthree by remember { mutableStateOf(false) }
+                var resultfour by remember { mutableStateOf(false) }
+                var resultfive by remember { mutableStateOf(false) }
+                var resultsix by remember { mutableStateOf(false) }
+                var resultseven by remember { mutableStateOf(false) }
+                var resulteight by remember { mutableStateOf(false) }
+                var resultnine by remember { mutableStateOf(false) }
                 NavHost(
                     navController = navController,
                     startDestination = "startpick"
@@ -60,34 +73,52 @@ class MainActivity : ComponentActivity() {
                         MA(navController)
                     }
                     composable("home"){
-                        Home(navController)
+                        Home(navController,
+                            resultone = resultone,
+                            resulttwo = resulttwo,
+                            resultthree = resultthree,
+                            resultfour = resultfour,
+                            resultfive = resultfive,
+                            resultsix = resultsix,
+                            resultseven = resultseven,
+                            resulteight = resulteight,
+                            resultnine = resultnine)
                     }
                     composable("one"){
-                        One(navController)
+                        One(navController,
+                            resultone = resultone)
                     }
                     composable("two"){
-                        Two(navController)
+                        Two(navController,
+                            resulttwo = resulttwo)
                     }
                     composable("three"){
-                        Three(navController)
+                        Three(navController,
+                            resultthree = resultthree)
                     }
                     composable("four"){
-                        Four(navController)
+                        Four(navController,
+                            resultfour = resultfour)
                     }
                     composable("five"){
-                        Five(navController)
+                        Five(navController,
+                            resultfive = resultfive)
                     }
                     composable("six"){
-                        Six(navController)
+                        Six(navController,
+                            resultsix = resultsix)
                     }
                     composable("seven"){
-                        Seven(navController)
+                        Seven(navController,
+                            resultseven = resultseven)
                     }
                     composable("eight"){
-                        Eight(navController)
+                        Eight(navController,
+                            resulteight = resulteight)
                     }
                     composable("nine"){
-                        Nine(navController)
+                        Nine(navController,
+                            resultnine = resultnine)
                     }
                 }
             }

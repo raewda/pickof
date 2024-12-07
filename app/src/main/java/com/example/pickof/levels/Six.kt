@@ -26,7 +26,7 @@ import com.example.pickof.ui.theme.Seryi
 import com.example.pickof.ui.theme.gamaamli
 
 @Composable
-fun Six(navController: NavHostController){
+fun Six(navController: NavHostController, resultsix: Boolean){
     Scaffold(
         modifier = Modifier.fillMaxSize(),
         containerColor = Seryi

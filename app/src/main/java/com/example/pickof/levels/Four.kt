@@ -26,7 +26,7 @@ import com.example.pickof.ui.theme.Seryi
 import com.example.pickof.ui.theme.gamaamli
 
 @Composable
-fun Four(navController: NavHostController){
+fun Four(navController: NavHostController, resultfour: Boolean){
     Scaffold(
         modifier = Modifier.fillMaxSize(),
         containerColor = Seryi

@@ -28,7 +28,18 @@ import com.example.pickof.ui.theme.Typography
 import com.example.pickof.ui.theme.gamaamli
 
 @Composable
-fun Home(navController: NavHostController){
+fun Home(
+    navController: NavHostController,
+    resultone: Boolean,
+    resulttwo: Boolean,
+    resultthree: Boolean,
+    resultfour: Boolean,
+    resultfive: Boolean,
+    resultsix: Boolean,
+    resultseven: Boolean,
+    resulteight: Boolean,
+    resultnine: Boolean,
+){
     Scaffold(
         modifier = Modifier.fillMaxSize(),
         containerColor = Seryi
@@ -77,14 +88,27 @@ fun Home(navController: NavHostController){
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
-                Text("PROGRESS:",
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(horizontal = 30.dp),
-                    fontFamily = gamaamli,
-                    fontSize = 18.sp,
-                    color = Color.White
+                if (resultone == true){
+                    Text("PROGRESS: 100%",
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 30.dp),
+                        fontFamily = gamaamli,
+                        fontSize = 18.sp,
+                        color = Color.White
                     )
+                } else{
+                    Text("PROGRESS: 0%",
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 30.dp),
+                        fontFamily = gamaamli,
+                        fontSize = 18.sp,
+                        color = Color.White
+                    )
+                }
+
+
 
                 //2
                 Button(
