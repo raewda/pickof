@@ -153,7 +153,7 @@ fun MA (navController: NavHostController) {
                 )
 
                 Image(
-                    painter = painterResource(R.drawable.iccon),
+                    painter = painterResource(R.drawable.icon),
                     contentDescription = "img",
                     alignment = Alignment.Center,
                     modifier = Modifier
