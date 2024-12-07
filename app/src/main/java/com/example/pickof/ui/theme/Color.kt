@@ -12,3 +12,4 @@ val Pink40 = Color(0xFF7D5260)
 
 val Seryi = Color(0xFF687B85)
 val Biryuzovyi = Color(0xFF00FFF2)
+val Softblue = Color(0xFF604DF6)

@@ -51,7 +51,7 @@ fun Eight(navController: NavHostController){
                             .padding(10.dp)
                             .size(80.dp, 40.dp),
                         onClick = {
-                            navController.navigate("seven")
+                            navController.navigate("home")
                         },
                         colors = ButtonDefaults.buttonColors(Biryuzovyi),
                         shape = RoundedCornerShape(
