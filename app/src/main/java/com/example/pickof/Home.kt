@@ -127,14 +127,25 @@ fun Home(
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
-                Text("PROGRESS:",
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(horizontal = 30.dp),
-                    fontFamily = gamaamli,
-                    fontSize = 18.sp,
-                    color = Color.White
-                )
+                if (resulttwo == true){
+                    Text("PROGRESS: 100%",
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 30.dp),
+                        fontFamily = gamaamli,
+                        fontSize = 18.sp,
+                        color = Color.White
+                    )
+                } else{
+                    Text("PROGRESS: 0%",
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 30.dp),
+                        fontFamily = gamaamli,
+                        fontSize = 18.sp,
+                        color = Color.White
+                    )
+                }
 
                 //3
                 Button(
@@ -153,14 +164,25 @@ fun Home(
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
-                Text("PROGRESS:",
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(horizontal = 30.dp),
-                    fontFamily = gamaamli,
-                    fontSize = 18.sp,
-                    color = Color.White
-                )
+                if (resultthree == true){
+                    Text("PROGRESS: 100%",
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 30.dp),
+                        fontFamily = gamaamli,
+                        fontSize = 18.sp,
+                        color = Color.White
+                    )
+                } else{
+                    Text("PROGRESS: 0%",
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 30.dp),
+                        fontFamily = gamaamli,
+                        fontSize = 18.sp,
+                        color = Color.White
+                    )
+                }
 
                 //4
                 Button(
@@ -179,14 +201,25 @@ fun Home(
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
-                Text("PROGRESS:",
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(horizontal = 30.dp),
-                    fontFamily = gamaamli,
-                    fontSize = 18.sp,
-                    color = Color.White
-                )
+                if (resultfour == true){
+                    Text("PROGRESS: 100%",
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 30.dp),
+                        fontFamily = gamaamli,
+                        fontSize = 18.sp,
+                        color = Color.White
+                    )
+                } else{
+                    Text("PROGRESS: 0%",
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 30.dp),
+                        fontFamily = gamaamli,
+                        fontSize = 18.sp,
+                        color = Color.White
+                    )
+                }
 
                 //5
                 Button(
@@ -205,14 +238,25 @@ fun Home(
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
-                Text("PROGRESS:",
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(horizontal = 30.dp),
-                    fontFamily = gamaamli,
-                    fontSize = 18.sp,
-                    color = Color.White
-                )
+                if (resultfive == true){
+                    Text("PROGRESS: 100%",
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 30.dp),
+                        fontFamily = gamaamli,
+                        fontSize = 18.sp,
+                        color = Color.White
+                    )
+                } else{
+                    Text("PROGRESS: 0%",
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 30.dp),
+                        fontFamily = gamaamli,
+                        fontSize = 18.sp,
+                        color = Color.White
+                    )
+                }
 
                 //6
                 Button(
@@ -231,14 +275,25 @@ fun Home(
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
-                Text("PROGRESS:",
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(horizontal = 30.dp),
-                    fontFamily = gamaamli,
-                    fontSize = 18.sp,
-                    color = Color.White
-                )
+                if (resultsix == true){
+                    Text("PROGRESS: 100%",
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 30.dp),
+                        fontFamily = gamaamli,
+                        fontSize = 18.sp,
+                        color = Color.White
+                    )
+                } else{
+                    Text("PROGRESS: 0%",
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 30.dp),
+                        fontFamily = gamaamli,
+                        fontSize = 18.sp,
+                        color = Color.White
+                    )
+                }
 
                 //7
                 Button(
@@ -257,14 +312,25 @@ fun Home(
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
-                Text("PROGRESS:",
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(horizontal = 30.dp),
-                    fontFamily = gamaamli,
-                    fontSize = 18.sp,
-                    color = Color.White
-                )
+                if (resultseven == true){
+                    Text("PROGRESS: 100%",
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 30.dp),
+                        fontFamily = gamaamli,
+                        fontSize = 18.sp,
+                        color = Color.White
+                    )
+                } else{
+                    Text("PROGRESS: 0%",
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 30.dp),
+                        fontFamily = gamaamli,
+                        fontSize = 18.sp,
+                        color = Color.White
+                    )
+                }
 
                 //8
                 Button(
@@ -283,14 +349,25 @@ fun Home(
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
-                Text("PROGRESS:",
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(horizontal = 30.dp),
-                    fontFamily = gamaamli,
-                    fontSize = 18.sp,
-                    color = Color.White
-                )
+                if (resulteight == true){
+                    Text("PROGRESS: 100%",
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 30.dp),
+                        fontFamily = gamaamli,
+                        fontSize = 18.sp,
+                        color = Color.White
+                    )
+                } else{
+                    Text("PROGRESS: 0%",
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 30.dp),
+                        fontFamily = gamaamli,
+                        fontSize = 18.sp,
+                        color = Color.White
+                    )
+                }
 
                 //9
                 Button(
@@ -309,14 +386,25 @@ fun Home(
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
-                Text("PROGRESS:",
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(horizontal = 30.dp),
-                    fontFamily = gamaamli,
-                    fontSize = 18.sp,
-                    color = Color.White
-                )
+                if (resultnine == true){
+                    Text("PROGRESS: 100%",
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 30.dp),
+                        fontFamily = gamaamli,
+                        fontSize = 18.sp,
+                        color = Color.White
+                    )
+                } else{
+                    Text("PROGRESS: 0%",
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 30.dp),
+                        fontFamily = gamaamli,
+                        fontSize = 18.sp,
+                        color = Color.White
+                    )
+                }
 
             }
         }
