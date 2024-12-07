@@ -84,7 +84,7 @@ fun Home(
                     shape = RoundedCornerShape(
                         10, 50, 10, 50)
                 ) {
-                    Text("path 1",
+                    Text("level 1",
                         modifier = Modifier,
                         style = Typography.bodySmall,
                         color = Color.White)
@@ -123,7 +123,7 @@ fun Home(
                     shape = RoundedCornerShape(
                         10, 50, 10, 50)
                 ) {
-                    Text("path 2",
+                    Text("level 2",
                         modifier = Modifier,
                         style = Typography.bodySmall,
                         color = Color.White)
@@ -160,7 +160,7 @@ fun Home(
                     shape = RoundedCornerShape(
                         10, 50, 10, 50)
                 ) {
-                    Text("path 3",
+                    Text("level 3",
                         modifier = Modifier,
                         style = Typography.bodySmall,
                         color = Color.White)
@@ -197,7 +197,7 @@ fun Home(
                     shape = RoundedCornerShape(
                         10, 50, 10, 50)
                 ) {
-                    Text("path 4",
+                    Text("level 4",
                         modifier = Modifier,
                         style = Typography.bodySmall,
                         color = Color.White)
@@ -234,7 +234,7 @@ fun Home(
                     shape = RoundedCornerShape(
                         10, 50, 10, 50)
                 ) {
-                    Text("path 5",
+                    Text("level 5",
                         modifier = Modifier,
                         style = Typography.bodySmall,
                         color = Color.White)
@@ -271,7 +271,7 @@ fun Home(
                     shape = RoundedCornerShape(
                         10, 50, 10, 50)
                 ) {
-                    Text("path 6",
+                    Text("level 6",
                         modifier = Modifier,
                         style = Typography.bodySmall,
                         color = Color.White)
@@ -308,7 +308,7 @@ fun Home(
                     shape = RoundedCornerShape(
                         10, 50, 10, 50)
                 ) {
-                    Text("path 7",
+                    Text("level 7",
                         modifier = Modifier,
                         style = Typography.bodySmall,
                         color = Color.White)
@@ -345,7 +345,7 @@ fun Home(
                     shape = RoundedCornerShape(
                         10, 50, 10, 50)
                 ) {
-                    Text("path 8",
+                    Text("level 8",
                         modifier = Modifier,
                         style = Typography.bodySmall,
                         color = Color.White)
@@ -382,7 +382,7 @@ fun Home(
                     shape = RoundedCornerShape(
                         10, 50, 10, 50)
                 ) {
-                    Text("path 9",
+                    Text("level 9",
                         modifier = Modifier,
                         style = Typography.bodySmall,
                         color = Color.White)

@@ -2,6 +2,8 @@ package com.example.pickof.levels
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowColumn
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -36,6 +38,7 @@ import com.example.pickof.ui.theme.Softblue
 import com.example.pickof.ui.theme.gamaamli
 import kotlin.random.Random
 
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun One(
     navController: NavHostController,
@@ -128,43 +131,52 @@ fun One(
                 )
 
 
-                fun rand() : gameButton {
-                    return gameButton.getById(Random.nextInt(1, 2))
-                }
+                FlowColumn(
+                    modifier = Modifier
+                        .padding(innerPadding)
+                        .padding(bottom = 50.dp)
+                        .fillMaxSize(),
+                    verticalArrangement = Arrangement.SpaceEvenly,
+                    horizontalArrangement = Arrangement.Center,
+                    maxItemsInEachColumn = 1
+                ) {
+                    fun rand() : gameButton {
+                        return gameButton.getById(Random.nextInt(1, 2))
+                    }
 
 
-                for (i in 1..2){
-                    var gamer by remember { mutableStateOf(false) }
-                    Button(
-                        modifier = Modifier
-                            .padding(10.dp)
-                            .size(40.dp)
-                            .align(Alignment.CenterHorizontally),
-                        onClick = {
-                            game = true
-                            gamepick = rand().id
-                            gamer = true
-                            gamerpick = i;
-                            if (gamerpick == gamepick){
-                                resultone.value = true
-                            }
-                        },
-                        colors = ButtonDefaults.buttonColors(
-                            containerColor = if (gamerpick == i && gamepick == i){
-                                Softblue}
+                    for (i in 1..2){
+                        var gamer by remember { mutableStateOf(false) }
+                        Button(
+                            modifier = Modifier
+                                .padding(10.dp)
+                                .size(70.dp, 40.dp),
+                            onClick = {
+                                game = true
+                                gamepick = rand().id
+                                gamer = true
+                                gamerpick = i;
+                                if (gamerpick == gamepick){
+                                    resultone.value = true
+                                }
+                            },
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = if (gamerpick == i && gamepick == i){
+                                    Softblue}
                                 else if (gamepick == i){
                                     Softblue
                                 }
                                 else if (gamerpick == i){
                                     Color.White
                                 }
-                            else{
-                                Biryuzovyi
-                            }
-                        ),
-                        shape = RoundedCornerShape(
-                            10, 50, 10, 50)
-                    ){}
+                                else{
+                                    Biryuzovyi
+                                }
+                            ),
+                            shape = RoundedCornerShape(
+                                10, 50, 10, 50)
+                        ){}
+                    }
                 }
 
             } //column
