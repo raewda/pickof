@@ -14,10 +14,10 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -29,18 +29,22 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import com.example.pickof.classes.gameButton
 import com.example.pickof.ui.theme.Biryuzovyi
 import com.example.pickof.ui.theme.Seryi
+import com.example.pickof.ui.theme.Softblue
 import com.example.pickof.ui.theme.gamaamli
+import kotlin.random.Random
 
 @Composable
 fun One(
-    navController: NavHostController, resultone: Boolean,
+    navController: NavHostController,
+    resultone: MutableState<Boolean>,
         ){
 
-    var gamer by remember { mutableStateOf(false) }
+    var gamerpick by remember { mutableStateOf(0) }
+    var gamepick by remember { mutableStateOf(0) }
     var game by remember { mutableStateOf(false) }
-    var win by remember { mutableStateOf(false) }
 
     Scaffold(
         modifier = Modifier.fillMaxSize(),
@@ -123,45 +127,44 @@ fun One(
                     softWrap = true
                 )
 
-                Button(
-                    modifier = Modifier
-                        .padding(10.dp)
-                        .size(80.dp, 160.dp)
-                        .align(Alignment.CenterHorizontally),
-                    onClick = {
-                        gamer = true
-                    },
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = if (gamer == true){
-                            Color.White
-                        } else{
-                            Biryuzovyi
-                        }
-                    ),
-                    shape = RoundedCornerShape(
-                        10, 50, 10, 50)
-                ) {
 
+                fun rand() : gameButton {
+                    return gameButton.getById(Random.nextInt(1, 2))
                 }
 
 
-
-                Button(
-                    modifier = Modifier
-                        .padding(10.dp)
-                        .size(80.dp)
-                        .align(Alignment.CenterHorizontally),
-                    onClick = {
-                        gamer = false
-                        game = false
-                    },
-                    colors = ButtonDefaults.buttonColors(Color.Transparent)
-                ) {
-                Icon(
-                    imageVector = Icons.Filled.Refresh,
-                    contentDescription = "replay",
-                    modifier = Modifier
-                        .fillMaxSize())
+                for (i in 1..2){
+                    var gamer by remember { mutableStateOf(false) }
+                    Button(
+                        modifier = Modifier
+                            .padding(10.dp)
+                            .size(40.dp)
+                            .align(Alignment.CenterHorizontally),
+                        onClick = {
+                            game = true
+                            gamepick = rand().id
+                            gamer = true
+                            gamerpick = i;
+                            if (gamerpick == gamepick){
+                                resultone.value = true
+                            }
+                        },
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = if (gamerpick == i && gamepick == i){
+                                Softblue}
+                                else if (gamepick == i){
+                                    Softblue
+                                }
+                                else if (gamerpick == i){
+                                    Color.White
+                                }
+                            else{
+                                Biryuzovyi
+                            }
+                        ),
+                        shape = RoundedCornerShape(
+                            10, 50, 10, 50)
+                    ){}
                 }
 
             } //column

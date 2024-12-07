@@ -15,6 +15,7 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.MutableState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
@@ -26,7 +27,7 @@ import com.example.pickof.ui.theme.Seryi
 import com.example.pickof.ui.theme.gamaamli
 
 @Composable
-fun Eight(navController: NavHostController, resulteight: Boolean){
+fun Eight(navController: NavHostController, resulteight: MutableState<Boolean>){
     Scaffold(
         modifier = Modifier.fillMaxSize(),
         containerColor = Seryi

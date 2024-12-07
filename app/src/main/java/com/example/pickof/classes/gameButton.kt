@@ -4,6 +4,7 @@ import androidx.compose.ui.graphics.Color
 import com.example.pickof.ui.theme.Biryuzovyi
 import com.example.pickof.ui.theme.Seryi
 import com.example.pickof.ui.theme.Softblue
+import kotlin.random.Random
 
 open class gameButton(
     val id : Int,
@@ -20,4 +21,20 @@ open class gameButton(
     object seven : gameButton (7, Biryuzovyi, Seryi, Softblue)
     object eight : gameButton (8, Biryuzovyi, Seryi, Softblue)
     object nine : gameButton (9, Biryuzovyi, Seryi, Softblue)
+
+    companion object {
+        const val Count: Int = 5
+        private val all = listOf(
+            one, two, three, four, five, six, seven, eight, nine
+        )
+        fun getById(id: Int): gameButton {
+            all.forEach() { el ->
+                if (el.id == id) return el
+            }
+            return one
+        }
+    }
 }
+
+
+

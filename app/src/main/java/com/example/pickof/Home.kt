@@ -15,6 +15,7 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.MutableState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -30,15 +31,15 @@ import com.example.pickof.ui.theme.gamaamli
 @Composable
 fun Home(
     navController: NavHostController,
-    resultone: Boolean,
-    resulttwo: Boolean,
-    resultthree: Boolean,
-    resultfour: Boolean,
-    resultfive: Boolean,
-    resultsix: Boolean,
-    resultseven: Boolean,
-    resulteight: Boolean,
-    resultnine: Boolean,
+    resultone: MutableState<Boolean>,
+    resulttwo: MutableState<Boolean>,
+    resultthree: MutableState<Boolean>,
+    resultfour: MutableState<Boolean>,
+    resultfive: MutableState<Boolean>,
+    resultsix: MutableState<Boolean>,
+    resultseven: MutableState<Boolean>,
+    resulteight: MutableState<Boolean>,
+    resultnine: MutableState<Boolean>,
 ){
     Scaffold(
         modifier = Modifier.fillMaxSize(),
@@ -88,7 +89,7 @@ fun Home(
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
-                if (resultone == true){
+                if (resultone.value == true){
                     Text("PROGRESS: 100%",
                         modifier = Modifier
                             .fillMaxWidth()
@@ -127,7 +128,7 @@ fun Home(
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
-                if (resulttwo == true){
+                if (resulttwo.value == true){
                     Text("PROGRESS: 100%",
                         modifier = Modifier
                             .fillMaxWidth()
@@ -164,7 +165,7 @@ fun Home(
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
-                if (resultthree == true){
+                if (resultthree.value == true){
                     Text("PROGRESS: 100%",
                         modifier = Modifier
                             .fillMaxWidth()
@@ -201,7 +202,7 @@ fun Home(
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
-                if (resultfour == true){
+                if (resultfour.value == true){
                     Text("PROGRESS: 100%",
                         modifier = Modifier
                             .fillMaxWidth()
@@ -238,7 +239,7 @@ fun Home(
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
-                if (resultfive == true){
+                if (resultfive.value == true){
                     Text("PROGRESS: 100%",
                         modifier = Modifier
                             .fillMaxWidth()
@@ -275,7 +276,7 @@ fun Home(
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
-                if (resultsix == true){
+                if (resultsix.value == true){
                     Text("PROGRESS: 100%",
                         modifier = Modifier
                             .fillMaxWidth()
@@ -312,7 +313,7 @@ fun Home(
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
-                if (resultseven == true){
+                if (resultseven.value == true){
                     Text("PROGRESS: 100%",
                         modifier = Modifier
                             .fillMaxWidth()
@@ -349,7 +350,7 @@ fun Home(
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
-                if (resulteight == true){
+                if (resulteight.value == true){
                     Text("PROGRESS: 100%",
                         modifier = Modifier
                             .fillMaxWidth()
@@ -386,7 +387,7 @@ fun Home(
                         style = Typography.bodySmall,
                         color = Color.White)
                 }
-                if (resultnine == true){
+                if (resultnine.value == true){
                     Text("PROGRESS: 100%",
                         modifier = Modifier
                             .fillMaxWidth()

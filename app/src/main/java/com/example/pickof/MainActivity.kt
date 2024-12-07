@@ -19,10 +19,8 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -56,15 +54,15 @@ class MainActivity : ComponentActivity() {
         setContent {
             PickOfTheme {
                 val navController = rememberNavController()
-                var resultone by remember { mutableStateOf(false) }
-                var resulttwo by remember { mutableStateOf(false) }
-                var resultthree by remember { mutableStateOf(false) }
-                var resultfour by remember { mutableStateOf(false) }
-                var resultfive by remember { mutableStateOf(false) }
-                var resultsix by remember { mutableStateOf(false) }
-                var resultseven by remember { mutableStateOf(false) }
-                var resulteight by remember { mutableStateOf(false) }
-                var resultnine by remember { mutableStateOf(false) }
+                val resultone = remember { mutableStateOf(false) }
+                val resulttwo = remember { mutableStateOf(false) }
+                val resultthree = remember { mutableStateOf(false) }
+                val resultfour = remember { mutableStateOf(false) }
+                val resultfive = remember { mutableStateOf(false) }
+                val resultsix = remember { mutableStateOf(false) }
+                val resultseven = remember { mutableStateOf(false) }
+                val resulteight = remember { mutableStateOf(false) }
+                val resultnine = remember { mutableStateOf(false) }
                 NavHost(
                     navController = navController,
                     startDestination = "startpick"
